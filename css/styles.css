@@ -1,6 +1,354 @@
 body {
-  background: #e5e5e5;
+  background: var(--background-color-main);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   color: #212121;
+  width: 1600px;
+}
+.conteiner {
+  background-color: white;
+  width: 1600px;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* задаем переменные */
+:root {
+  --text-color: #000000;
+  --background-color-main: #e5e5e5;
+  --activ-link-nav: #2196f3;
+}
+/* Логотип */
+.logo {
+  margin-top: 25px;
+  margin-left: 215px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.partone {
+  color: #2196f3;
+}
+.parttwo {
+  color: var(--text-color);
+}
+/* Шапка сайта */
+.navigation {
+  display: block;
+  background-color: white;
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+}
+
+.navlist {
+  margin-top: 32px;
+  margin-left: 43px;
+  display: flex;
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.navlist a {
+  color: var(--text-color);
+}
+.navlist li {
+  margin-left: 50px;
+}
+.navlist a:hover {
+  color: #2196f3;
+}
+.navlist a:focus {
+  color: #2196f3;
+}
+.contactlist {
+  margin-top: 32px;
+  margin-left: 281px;
+  display: flex;
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.contactlist li {
+  margin-left: 50px;
+}
+.contactlist a {
+  color: #757575;
+}
+.contactlist a:hover {
+  color: #2196f3;
+}
+.contactlist a:focus {
+  color: #2196f3;
+}
+
+/* подвал сайта */
+.foot {
+  width: 1600px;
+  height: 252px;
+  background-color: #2f303a;
+  margin-top: 0px;
+}
+
+.logofooter {
+  padding-top: 60px;
+  margin-left: 215px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logofooter .parttwo {
+  color: #ffffff;
+}
+.adresslist {
+  margin-top: 20px;
+  margin-left: 215px;
+  padding-left: 0px;
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.adresslist li {
+  margin-top: 9px;
+}
+.adresslist a {
+  color: #757575;
+}
+.adresslist a:hover {
+  color: white;
+}
+.adresslist a:focus {
+  color: white;
+}
+
+/* Главный контент */
+.mainsection {
+  text-align: center;
+  width: 1600px;
+  height: 600px;
+  background-color: #2f303a;
+  margin-top: 0px;
+}
+.main_title {
+  margin: 0 0 0 0;
+  padding-top: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mainbutton {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+}
+/* Секция наши качества */
+.list_qualities {
+  display: flex;
+  list-style: none;
+  width: 1170px;
+  height: 101px;
+  margin-top: 94px;
+  margin-left: 215px;
+}
+.list_qualities li {
+  margin-right: 30px;
+}
+.list_qualities li > h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.list_qualities li > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* секция чем мы занимаемся */
+.direction_of_activity {
+  width: 1170px;
+  text-align: center;
+  margin-top: 94px;
+  margin-left: 215px;
+}
+.direction_of_activity h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.direction_of_activity ul {
+  list-style: none;
+  display: flex;
+  padding: 0 0 0 0;
+  margin-top: 50px;
+}
+.direction_of_activity ul > li {
+  margin-right: 30px;
+}
+/* секция наша команда */
+.our_teem {
+  width: 1600px;
+  height: 648px;
+  background-color: #f5f4fa;
+  text-align: center;
+  margin-top: 94px;
+}
+.our_teem ul {
+  list-style: none;
+  display: flex;
+  padding: 0 0 0 0;
+  margin-top: 50px;
+  margin-left: 215px;
+}
+.our_teem ul > li {
+  margin-right: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our_teem h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-top: 94px;
+}
+.our_teem h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.our_teem p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* Стилизация страницы портфолио */
+.portfolio_section {
+  width: 1250px;
+  height: 1360px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: 215px;
+}
+
+.button_list {
+  list-style: none;
+  display: flex;
+  padding-left: 280px;
+}
+.button_list li > button:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: white;
+}
+.button_list li > button:focus {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: white;
+}
+.button_list li > button {
+  cursor: pointer;
+  margin-right: 8px;
+}
+.button_filtr {
+  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.progect_list {
+  padding-left: 0px;
+
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.progect_list li {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.progect_list li > h3 {
+  margin-left: 24px;
+}
+.progect_list li > p {
+  margin-left: 24px;
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
