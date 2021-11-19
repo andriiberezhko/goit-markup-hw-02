@@ -22,10 +22,6 @@ body {
   font-family: Roboto, sans-serif;
   width: 1600px;
 }
-.conteiner {
-  background-color: var(--background-color-main);
-  width: 1600px;
-}
 .link {
   cursor: pointer;
   text-decoration: none;
@@ -44,7 +40,7 @@ ul {
   font-size: 26px;
   line-height: 31px;
 }
-.partone {
+.logo span {
   color: #2196f3;
 }
 .logo {
@@ -116,12 +112,6 @@ ul {
 /* логотип в подвале */
 .logofooter {
   padding-top: 60px;
-  margin-left: 215px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
 }
 
 .logofooter > .link {
