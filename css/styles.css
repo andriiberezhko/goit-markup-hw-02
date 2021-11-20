@@ -84,6 +84,7 @@ ul {
   margin-top: 32px;
   margin-left: 331px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   /* font-family: Roboto; */
   font-style: normal;
@@ -179,14 +180,14 @@ ul {
 /* Секция наши качества */
 .qualities {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1170px;
-  height: 101px;
   margin-top: 94px;
   margin-left: 215px;
+  padding-left: 0px;
 }
-.qualities li {
-  margin-right: 30px;
-}
+
 .qualities .title {
   font-style: normal;
   font-weight: bold;
@@ -196,6 +197,7 @@ ul {
   text-transform: uppercase;
 }
 .qualities .text {
+  width: 270px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -218,12 +220,14 @@ ul {
 }
 .activities .list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 0 0 0;
   margin-top: 50px;
 }
-.activities li {
+/* .activities li {
   margin-right: 30px;
-}
+} */
 /* секция наша команда */
 .teem {
   /* width: 1600px; */
@@ -234,6 +238,7 @@ ul {
 }
 .teem .list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 0 0 0;
   margin-top: 50px;
   margin-left: 215px;
@@ -280,6 +285,7 @@ ul {
   list-style: none;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 }
 .button-list .button-filtr:hover,
 .button-list .button-filtr:focus {
