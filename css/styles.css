@@ -20,7 +20,7 @@ body {
   background: var(--background-color-main);
   color: var(--text-heder-color);
   font-family: Roboto, sans-serif;
-  width: 1600px;
+  /* width: 1600px; */
 }
 .link {
   cursor: pointer;
@@ -57,7 +57,7 @@ ul {
 
 .navlist {
   margin-top: 32px;
-  margin-left: 43px;
+  margin-left: 93px;
   display: flex;
   list-style: none;
   font-family: Roboto;
@@ -69,7 +69,7 @@ ul {
 }
 
 .navlist .link {
-  margin-left: 50px;
+  margin-right: 50px;
   color: var(--text-heder-color);
 }
 .navlist .link:hover,
@@ -82,7 +82,7 @@ ul {
 /* контакты в шапке */
 .contactlist {
   margin-top: 32px;
-  margin-left: 281px;
+  margin-left: 331px;
   display: flex;
   list-style: none;
   font-family: Roboto;
@@ -93,7 +93,7 @@ ul {
   letter-spacing: 0.02em;
 }
 .contactlist .link {
-  margin-left: 50px;
+  margin-right: 50px;
   color: var(--text-color);
 }
 
@@ -268,7 +268,8 @@ ul {
 /* Стилизация страницы портфолио */
 /* кнопки навигации по портфолио */
 .portfolio-section {
-  width: 1250px;
+  width: 1170px;
+
   height: 1360px;
   margin-top: 94px;
   margin-bottom: 94px;
@@ -277,8 +278,8 @@ ul {
 
 .button-list {
   list-style: none;
+  justify-content: center;
   display: flex;
-  padding-left: 295px;
 }
 .button-list .button-filtr:hover,
 .button-list .button-filtr:focus {
@@ -305,8 +306,9 @@ ul {
   background-color: #f5f4fa;
   color: #212121;
 }
-/* спмсок проэктов */
+/* список проэктов */
 .progect-list {
+  justify-content: space-between;
   padding-left: 0px;
   list-style: none;
   display: flex;
@@ -315,7 +317,7 @@ ul {
 .progect-list li {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin-right: 30px;
+
   margin-top: 30px;
 }
 .progect-list .title {
